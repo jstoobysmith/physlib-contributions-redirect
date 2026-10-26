@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting…</title>
+  <meta name="robots" content="noindex">
+  <script>
+    (function () {
+      var target = "https://formalcontributions.com";
+      var path = window.location.pathname;
+      // If served from a GitHub Pages project URL, drop the repo prefix.
+      var prefix = "/physlib-contributions-redirect";
+      if (path === prefix || path.indexOf(prefix + "/") === 0) {
+        path = path.slice(prefix.length) || "/";
+      }
+      window.location.replace(target + path + window.location.search + window.location.hash);
+    })();
+  </script>
+</head>
+<body>
+  <p>This site has moved to <a href="https://formalcontributions.com">formalcontributions.com</a>.</p>
+</body>
+</html>
